@@ -10,9 +10,7 @@ export default function App() {
    <div className='App'>
     <Routes>
       <Route path='/' element={<Layout/>} >
-      <Route  main element={<HomePage/>}  />      
-      
-
+      <Route  main element={<HomePage/>} />      
       </Route>
     </Routes>
    </div>
