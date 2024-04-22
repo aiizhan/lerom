@@ -12,8 +12,7 @@ export default function App() {
     <Routes>
       <Route path='/' element={<Layout/>} >
       <Route  main element={<HomePage/>}  />
-        <Route path="/" element={<Odalar/>}/>
-      
+      <Route path="/" element={<Odalar/>}/>
 
       </Route>
     </Routes>
