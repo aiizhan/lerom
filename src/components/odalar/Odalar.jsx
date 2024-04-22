@@ -5,6 +5,7 @@ import t from "../../assets/image/img_3.png"
 import y from "../../assets/image/img_2.png"
 import u from "../../assets/image/img_6.png"
 import  p from "../../assets/image/Rectangle 10.png"
+import Information from "../information/Information.jsx";
 export default function Odalar(){
     return(
         <>
@@ -88,6 +89,7 @@ export default function Odalar(){
                     </div>
                 </div>
             </div>
+            <Information/>
         </>
     )
 }
