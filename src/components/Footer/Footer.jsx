@@ -7,8 +7,8 @@ import image2 from '../../assets/image/image 2.png'
 
 function Footer() {
   return (
-    <div className='container mx-auto'>
-      <div className='bg-gray-100 border border-black mt-12 py-6'>
+    <div className='container mx-auto border border-black'>
+      <div className=' mt-12 py-6'>
         <div className='flex justify-between'>
           <div className='w-1/4'>
             <h6 className='text-gray-500'>© ООО "Мебельная компания "Лером" 2021</h6>
@@ -27,7 +27,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='bg-gray-200 border border-black mt-4 py-6'>
+      <div className=' mt-4 py-6'>
         <div className='flex justify-between'>
           <div className='w-3/4'>
             <div className='flex gap-4'>
@@ -63,7 +63,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className='w-1/4 flex items-center justify-end border border-black'>
+          <div className='w-1/4 flex items-center justify-end'>
             <img src={image}/>
             <img src={image2}/>
           </div>
