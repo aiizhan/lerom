@@ -6,7 +6,7 @@ import newsImgTwo from './../../assets/image/newsImgTwo.png/'
 const News = () => {
     return (
         <div>
-            <h3 className={' sm:text-yellow-500 md:text-blue-800 lg:text-red-700 lg:text-black-500  lg:pl-11 lg: pt-10'}> Главная >> <span className={'font-bold'}>Новости</span></h3>
+            <h3 className={' sm:text-yellow-500 md:text-blue-800 lg:text-red-700 lg:text-black-500  lg:pl-11 lg: pt-10'}> Главная <span className={'font-bold'}>Новости</span></h3>
             <img className={'sm:w-[90%] sm:pl-10 sm:pt-5  lg:w-full md:w-10/12 '} src={newsImgOne} alt="img"/>
             <div className={'text-black font-bold pl-11 pt-3.5  pb-5'}>ЗАГОЛОВОК НОВОСТИ</div>
             <p className={'md:w-[90%] w-full pl-11 text-slate-950 sm:text-center'}>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem

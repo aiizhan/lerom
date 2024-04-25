@@ -8,6 +8,8 @@ import About from './components/About/About';
 import Modeling from './components/3Dmodeling/Modeling';
 import Payment from './components/Payment/Payment';
 import Buyer from './components/Buyer/Buyer';
+import News from './components/news/News';
+
 
 export default function App() {
   return (
@@ -20,6 +22,7 @@ export default function App() {
             <Route  path='/modeling' element={<Modeling/>}/>
             <Route  path='/payment' element={<Payment/>}/>
             <Route  path='/buyer' element={<Buyer/>}/>
+            <Route  path='/news' element={<News/>}/>
 
 
 
@@ -28,16 +31,4 @@ export default function App() {
      
     </div>
   );
-   <div className='App'>
-    <Routes>
-      <Route path='/' element={<Layout/>} 
-      <Route  main element={<HomePage/>}  />
-      <Route  main element={<HomePage/>}  />
-      <Route path="/" element={<Odalar/>}/>
-        <Route path="/" element={<Information/>}
-      </Route>
-    </Routes>
-   </div>
-  )
-
 }

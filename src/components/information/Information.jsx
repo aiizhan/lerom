@@ -24,7 +24,6 @@ export  default  function Information(){
                 </div>
             </div>
         </div>
-       <News/>
         </>
     )
 }

@@ -207,7 +207,7 @@ export default function Header() {
         <Link to='/modeling'>3D-моделирование</Link>
         <Link to='/buyer'>Покупателю</Link>
         <Link to='/payment'>Доставка и оплата</Link>
-        <Link to='/payment'>Новости</Link>
+        <Link to='/news'>Новости</Link>
         <input className="w-330 h-9 box-border border border-blue-700 rounded-full" type="text" placeholder="Поиск по сайту..." />
       </div>
     </div>
