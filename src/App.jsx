@@ -9,7 +9,6 @@ import Modeling from './components/3Dmodeling/Modeling';
 import Payment from './components/Payment/Payment';
 import Buyer from './components/Buyer/Buyer';
 
-
 export default function App() {
   return (
     <div className='App'>
@@ -29,4 +28,16 @@ export default function App() {
      
     </div>
   );
+   <div className='App'>
+    <Routes>
+      <Route path='/' element={<Layout/>} 
+      <Route  main element={<HomePage/>}  />
+      <Route  main element={<HomePage/>}  />
+      <Route path="/" element={<Odalar/>}/>
+        <Route path="/" element={<Information/>}
+      </Route>
+    </Routes>
+   </div>
+  )
+
 }
