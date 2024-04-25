@@ -12,6 +12,7 @@
     .up-footer{
     width: 1440px;
     height: 150px;
+    
     border: 1px solid navy;
     display: flex;
     gap: 50px;
