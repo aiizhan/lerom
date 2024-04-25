@@ -4,6 +4,7 @@ import logo from '../../assets/svg/footerLogo.svg';
 import digital from '../../assets/image/Demos.png';
 import image from '../../assets/image/image 1.png'
 import image2 from '../../assets/image/image 2.png'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -20,9 +21,6 @@ function Footer() {
             <h6 className='text-gray-500 mr-2'>Сайт разработан -</h6>
             <div className='flex items-center'>
               <img src={digital} alt='Digital' />
-              <div className='ml-2'>
-                <img src={logo} alt='Logo' />
-              </div>
             </div>
           </div>
         </div>
@@ -39,7 +37,9 @@ function Footer() {
               </div>
               <div>
                 <h5 className='font-bold'>Покупателю</h5>
+                <Link to='/orders'>
                    <h6>Как сделать заказ</h6>
+                </Link>
                     <h6>Рекомендации по сборке</h6>
                     <h6>Договор публичной оферты </h6> 
               </div>
@@ -57,9 +57,15 @@ function Footer() {
                    606 Мб</h6>
               </div>
               <div className='font-bold'>
+                <Link to='/installmentPlan'>  
               <h4 className='text-blue-500'>Рассрочка</h4>
-                <h4 className='text-blue-500'>Гарантия</h4>
+                </Link>
+                <Link to='/guarantee'>
+               <h4 className='text-blue-500'>Гарантия</h4>
+                </Link>
+                <Link to='/contact'>
                 <h4 className='text-blue-500'>Контакты</h4>
+                </Link>
               </div>
             </div>
           </div>
