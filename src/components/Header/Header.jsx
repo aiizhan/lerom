@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../../assets/image/logo (2).png'
+import logo from '../../assets/image/img_5.png'
 import time from '../../assets/svg/Vector (8).svg'
 import compas from '../../assets/svg/Vector (9).svg'
 import { Link } from 'react-router-dom'
