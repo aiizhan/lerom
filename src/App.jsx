@@ -6,16 +6,15 @@ import HomePage from './Pages/HomePage'
 import Odalar from "./components/odalar/Odalar.jsx";
 import Information from "./components/information/Information.jsx";
 
-
 export default function App() {
   return (
    <div className='App'>
     <Routes>
-      <Route path='/' element={<Layout/>} >
+      <Route path='/' element={<Layout/>} 
+      <Route  main element={<HomePage/>}  />
       <Route  main element={<HomePage/>}  />
       <Route path="/" element={<Odalar/>}/>
-        <Route path="/" element={<Information/>}/>
-
+        <Route path="/" element={<Information/>}
       </Route>
     </Routes>
    </div>
