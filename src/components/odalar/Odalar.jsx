@@ -5,7 +5,6 @@ import t from "../../assets/image/img_3.png"
 import y from "../../assets/image/img_2.png"
 import u from "../../assets/image/img_6.png"
 import  p from "../../assets/image/Rectangle 10.png"
-import Information from "../information/Information.jsx";
 
 
 export default function Odalar(){
@@ -51,6 +50,8 @@ export default function Odalar(){
                             покупки данного направления.</p>
                         <p className="text-[16px] pt-[18px] text-[#4A8CF7]">Товары под заказ в наличии: 2030шт</p>
                         <p className="pt-[18px]">Цены от: 42.000р</p>
+
+                       
                         <div className='w-[50px] h-[50px] border border-blue-500 border-solid rounded-full flex justify-center items-center'>
                             <img className="w-[16px] h-[16px]" src={u} alt="img"/>
                         </div>
@@ -91,7 +92,9 @@ export default function Odalar(){
                     </div>
                 </div>
             </div>
-            <Information/>
+            <div className='mt-5'>
+            <iframe  width="1440" height="500" src="https://www.youtube.com/embed/dWb-C_Fk8xc?si=b-BaOm629GNICUtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </>
     )
 }

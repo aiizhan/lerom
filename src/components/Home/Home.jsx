@@ -10,7 +10,6 @@ function Home() {
        <Slider/>
       <Odalar/>
       <Information/>
-     
     </div>
 
 

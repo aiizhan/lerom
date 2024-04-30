@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from '../../assets/image/img_5.png';
 import time from '../../assets/svg/Vector (8).svg';
 import compas from '../../assets/svg/Vector (9).svg';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { styled, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -11,6 +11,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PhoneIcon from '@mui/icons-material/Phone';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import MenuIcon from '@mui/icons-material/Menu';
+import BedroomPage from '../../Pages/BedroomPage';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -79,11 +80,25 @@ export default function Header() {
     };
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleChange = (event) => {
+    if (event.target.value === 'melissa2021') {
+      navigate('/melissa2021');
+    }
+  };
+
+  const [showOptions, setShowOptions] = useState(false);
+
+  const handleToggleOptions = () => {
+    setShowOptions(!showOptions);
+  };
+
   return (
-    <div className=''>
+    <div>
       <div className='flex justify-center items-center border-b border-gray-100 pb-5 sm:text-black-500 md:text-black-800 lg:text-red-70'>
-        <div className=''>
-          <div className=''>
+        <div>
+          <div>
             <div className='flex'>
               <img src={time} alt="" />
               <h4> Пн-Пт с 10:00 до 20:00</h4>
@@ -95,11 +110,11 @@ export default function Header() {
             <h4>Наши салоны</h4>
           </div>
         </div>
-        <Link to='/' className=''>
+        <Link to='/'>
           <img src={logo} alt="" />
         </Link>
-        <div className=''>
-          {screenWidth > 768 ? ( // Render phone numbers and icons for larger screens
+        <div>
+          {screenWidth > 768 ? (
             <div>
               <div>
                 <h2>
@@ -118,8 +133,8 @@ export default function Header() {
                 </h2>
               </div>
             </div>
-          ) : ( // Render menu icon for smaller screens
-           <MenuIcon/>
+          ) : (
+            <MenuIcon />
           )}
           <StyledMenu
             id="demo-customized-menu"
@@ -139,9 +154,11 @@ export default function Header() {
             <MenuItem onClick={handleClose} disableRipple>
               Прихожие
             </MenuItem>
+
             <MenuItem onClick={handleClose} disableRipple>
               Спальни
             </MenuItem>
+
             <MenuItem onClick={handleClose} disableRipple>
               Детские
             </MenuItem>
@@ -149,14 +166,14 @@ export default function Header() {
               Кровати
             </MenuItem>
             <MenuItem onClick={handleClose} disableRipple>
-              Матрасы 
+              Матрасы
             </MenuItem>
           </StyledMenu>
         </div>
       </div>
-      <div className='flex mt-4  sm:text-black md:text-black  -800 lg:text-red-70' >
+      <div className='flex mt-4 sm:text-black md:text-black -800 lg:text-red-70'>
+          <div>
         <Link to='/catalog'>
-          <div> 
             <Button
               id="demo-customized-button"
               aria-controls={open ? 'demo-customized-menu' : undefined}
@@ -170,6 +187,7 @@ export default function Header() {
             >
               Каталог
             </Button>
+            </Link>
             <StyledMenu
               id="demo-customized-menu"
               MenuListProps={{
@@ -188,9 +206,22 @@ export default function Header() {
               <MenuItem onClick={handleClose} disableRipple>
                 Прихожие
               </MenuItem>
-              <MenuItem onClick={handleClose} disableRipple>
-                Спальни
-              </MenuItem>
+              <Link to='/bedroom'>
+                <MenuItem disableRipple>
+                  <select onChange={handleChange}>
+                    <option>Спальни</option>
+                    <option value="melissa2021">Мелисса 2021</option>
+                    <option>Карина</option>
+                    <option>Камелия 2021</option>
+                  </select>
+                </MenuItem>
+              </Link>
+
+              {showOptions && (
+                <div>
+
+                </div>
+              )}
               <MenuItem onClick={handleClose} disableRipple>
                 Детские
               </MenuItem>
@@ -198,11 +229,11 @@ export default function Header() {
                 Кровати
               </MenuItem>
               <MenuItem onClick={handleClose} disableRipple>
-                Матрасы 
+                Матрасы
               </MenuItem>
             </StyledMenu>
           </div>
-        </Link>
+      
         <Link to='/about'>О нас</Link>
         <Link to='/modeling'>3D-моделирование</Link>
         <Link to='/buyer'>Покупателю</Link>
