@@ -11,7 +11,6 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PhoneIcon from '@mui/icons-material/Phone';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import MenuIcon from '@mui/icons-material/Menu';
-import BedroomPage from '../../Pages/BedroomPage';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -86,12 +85,6 @@ export default function Header() {
     if (event.target.value === 'melissa2021') {
       navigate('/melissa2021');
     }
-  };
-
-  const [showOptions, setShowOptions] = useState(false);
-
-  const handleToggleOptions = () => {
-    setShowOptions(!showOptions);
   };
 
   return (
@@ -199,7 +192,7 @@ export default function Header() {
             >
               <MenuItem onClick={handleClose} disableRipple>
                 Новинки
-              </MenuItem>
+              </MenuItem> 
               <MenuItem onClick={handleClose} disableRipple>
                 Гостинные
               </MenuItem>
@@ -208,7 +201,7 @@ export default function Header() {
               </MenuItem>
               <Link to='/bedroom'>
                 <MenuItem disableRipple>
-                  <select onChange={handleChange}>
+                  <select onChange={handleChange} >
                     <option>Спальни</option>
                     <option value="melissa2021">Мелисса 2021</option>
                     <option>Карина</option>
@@ -217,11 +210,11 @@ export default function Header() {
                 </MenuItem>
               </Link>
 
-              {showOptions && (
+              {/* {showOptions && (
                 <div>
 
                 </div>
-              )}
+              )} */}
               <MenuItem onClick={handleClose} disableRipple>
                 Детские
               </MenuItem>

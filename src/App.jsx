@@ -9,9 +9,9 @@ import Modeling from './components/3Dmodeling/Modeling';
 import Payment from './components/Payment/Payment';
 import Buyer from './components/Buyer/Buyer';
 import News from './components/news/News';
-import BedroomPage from './Pages/BedroomPage';
-import Melissa2021 from './components/Melissa/Melissa2021';
-import Modular from './components/Melissa/Modular';
+import BedroomPage from './Pages/BedroomPage'
+import Melissa2021 from './components/ModKom/Melissa2021';
+import Modular from './components/ModKom/Modular'
 
 
 export default function App() {

@@ -1,10 +1,7 @@
-import React from 'react'
-import catalog1 from '../../assets/image/catalog1.png'
-import catalog2 from '../../assets/image/catalog2.png'
-import catalog3 from '../../assets/image/catalog3.png'
-import prosent from '../../assets/image/prosent.png'
-import install from '../../assets/image/install.png'
-// import cart from '../../assets/svg/cart.svg'
+import React from "react"
+import catalog1 from '../../assets/image/catalog1.png';
+import catalog2 from '../../assets/image/catalog2.png';
+import catalog3 from '../../assets/image/catalog3.png';
 
 function Bedroom() {
   return (
@@ -37,12 +34,6 @@ function Bedroom() {
         <p className='text-blue-500'>Смотреть варианты композиций</p>
       </div>    
     </div>
-
-    {/* <div className='w-40 h-200 border border-black ml-20 mb-50'>
-      <img src={install}/>
-      <img src={prosent}/>
-    </div> */}
-
     </>
   )
 }

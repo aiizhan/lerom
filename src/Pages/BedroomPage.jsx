@@ -1,5 +1,5 @@
 import React from 'react'
-import Bedroom from '../components/CatalogsPages/Bedroom'
+import Bedroom from '../components/Bedroom/Bedroom'
 
 function BedroomPage() {
   return (

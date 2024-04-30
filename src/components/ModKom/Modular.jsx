@@ -95,11 +95,10 @@ function Modular() {
         <h2 className='text-2xl'>6 284 ₽</h2>
         <button className='w-120 h-50 bg-blue-500 text-2xl'>Купить</button>
        </div>
-
   </div>
 
 
-  <div className='grid grid-cols-4  w-1440 mt-4 h-500 ml-60'>
+  <div className='grid grid-cols-4   w-1440 mt-4 h-500 ml-60'>
       <div className='w-330 h-487  border border-black-500 shadow-2xl  bg-white text-center mt-4 gap-6 grid'>
         <img src={modul1}/>
         <h1 className='text-2xl text-blue-500'>АН-2801</h1>
@@ -179,10 +178,14 @@ function Modular() {
         <h2 className='text-2xl'>6 284 ₽</h2>
         <button className='w-120 h-50 bg-blue-500 text-2xl'>Купить</button>
        </div>
-
   </div>
-    </>
-  )
+
+
+
+ 
+
+        </>
+  );
 }
 
-export default Modular
+export default Modular;
