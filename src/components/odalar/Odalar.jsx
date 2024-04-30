@@ -91,7 +91,7 @@ export default function Odalar(){
                     </div>
                 </div>
             </div>
-            <Information/>
+    
         </>
     )
 }
