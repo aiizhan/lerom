@@ -1,9 +1,20 @@
 import React from 'react'
+import Slider from '../Slider/Slider'
+import Odalar from '../odalar/Odalar'
+import Information from '../information/Information'
 
-function home() {
+function Home() {
   return (
-    <div>home</div>
+  
+    <div>
+       <Slider/>
+      <Odalar/>
+      <Information/>
+     
+    </div>
+
+
   )
 }
 
-export default home
+export default Home
