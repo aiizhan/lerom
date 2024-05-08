@@ -12,7 +12,7 @@ import News from './components/news/News';
 import BedroomPage from './Pages/BedroomPage'
 import Melissa2021 from './components/ModKom/Melissa2021';
 import Modular from './components/ModKom/Modular'
-
+import Melissa from './components/Melissa/Melissa';
 
 export default function App() {
   return (
@@ -29,6 +29,7 @@ export default function App() {
             <Route path='/bedroom' element={<BedroomPage/>}/>
             <Route path='/melissa2021' element={<Melissa2021/>}/>
             <Route path='/modular' element={<Modular/>}/>
+            <Route path='/melissa' element={<Melissa/>}/>
           </Route>
         </Routes>
      

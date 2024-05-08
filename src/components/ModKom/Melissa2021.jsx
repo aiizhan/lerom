@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import melissa1 from '../../assets/image/melissa1.png';
 import melissa2 from '../../assets/image/melissa2.png';
-import melissa3 from '../../assets/image/melissa3.png';
 import color1 from '../../assets/image/color1.png';
 import color2 from '../../assets/image/color2.png';
 import color3 from '../../assets/image/color3.png';
@@ -25,6 +24,7 @@ function Melissa2021() {
 
   return (
     <>
+    <Link to='/melissa'>
       <div className='mr-4 ml-64'>
         <button
           className={`border border-black ${selectedPage === 'compositions' ? 'bg-blue-500' : ''} w-73 h-352 text-2xl text-white-500`}
@@ -102,7 +102,6 @@ function Melissa2021() {
         <h2 className='text-2xl'>59 658 ₽</h2>
         <button className='w-120 h-50 bg-blue-500 text-2xl'>Купить</button>
        </div>
-
       </div>
 
 
@@ -167,6 +166,7 @@ function Melissa2021() {
         <button className='w-120 h-50 bg-blue-500 text-2xl'>Купить</button>
        </div>
       </div>
+    </Link>
 
 
     </>

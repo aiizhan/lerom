@@ -11,6 +11,7 @@ import color5 from '../../assets/image/color5.png'
 import color6 from '../../assets/image/color6.png'
 import color7 from '../../assets/image/color7.png'
 import color8 from '../../assets/image/color8.png'
+import { Link } from 'react-router-dom'
 
 function Modular() {
   return (

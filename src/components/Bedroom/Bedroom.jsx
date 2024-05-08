@@ -2,6 +2,7 @@ import React from "react"
 import catalog1 from '../../assets/image/catalog1.png';
 import catalog2 from '../../assets/image/catalog2.png';
 import catalog3 from '../../assets/image/catalog3.png';
+import { Link } from "react-router-dom";
 
 function Bedroom() {
   return (
@@ -12,7 +13,6 @@ function Bedroom() {
         <h1 className='text-2xl text-black-500'>Мелисса 2021</h1>
         <h6 className='text-2xl text-black-500'>Мини текст описания и преимущества покупки данного направления.</h6>
       <p className='text-blue-500'>Смотреть варианты композиций</p>
-      {/* <img  src={cart}/> */}
       </div>
       
 
