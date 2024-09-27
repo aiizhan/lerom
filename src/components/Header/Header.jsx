@@ -12,6 +12,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import Card from '../../assets/image/Group 199.png'
+
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -95,8 +97,8 @@ export default function Header() {
             <h4>Наши салоны</h4>
           </div>
         </div>
-        <Link to='/' className=''>
-          <img src={logo} alt="" />
+        <Link to='/' className=' '>
+          <img className='w-[185px] h-[92px]' src={logo} alt="" />
         </Link>
         <div className=''>
           {screenWidth > 768 ? ( // Render phone numbers and icons for larger screens
@@ -118,8 +120,7 @@ export default function Header() {
                 </h2>
               </div>
             </div>
-          ) : ( // Render menu icon for smaller screens
-           <MenuIcon/>
+          ) : (             <MenuIcon />
           )}
           <StyledMenu
             id="demo-customized-menu"
@@ -149,14 +150,14 @@ export default function Header() {
               Кровати
             </MenuItem>
             <MenuItem onClick={handleClose} disableRipple>
-              Матрасы 
+              Матрасы
             </MenuItem>
           </StyledMenu>
         </div>
       </div>
       <div className='flex mt-4  sm:text-black md:text-black  -800 lg:text-red-70' >
         <Link to='/catalog'>
-          <div> 
+          <div>
             <Button
               id="demo-customized-button"
               aria-controls={open ? 'demo-customized-menu' : undefined}
@@ -198,7 +199,7 @@ export default function Header() {
                 Кровати
               </MenuItem>
               <MenuItem onClick={handleClose} disableRipple>
-                Матрасы 
+                Матрасы
               </MenuItem>
             </StyledMenu>
           </div>
@@ -210,6 +211,10 @@ export default function Header() {
         <Link to='/news'>Новости</Link>
         <input className="w-330 h-9 box-border border border-blue-700 rounded-full" type="text" placeholder="Поиск по сайту..." />
       </div>
+
+      <div className='fixed end-0  bottom-100px     '>
+        <img  className='transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  ' src={Card} alt="" />
+      </div>
     </div>
   );
-}
+} 

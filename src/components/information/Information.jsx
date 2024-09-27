@@ -1,7 +1,7 @@
 import s from "../../assets/image/img_8.png"
 import f from "../../assets/image/img_12.png"
 import News from "../news/News.jsx";
-
+import Card from "../Card/Card.jsx";
 export  default  function Information(){
     return(
         <>
@@ -24,6 +24,9 @@ export  default  function Information(){
                 </div>
             </div>
         </div>
+
+       <News/>
+        <Card/>
         </>
     )
 }
